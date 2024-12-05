@@ -1,0 +1,8 @@
+# Exclude all .mp4 files
+*.mp4
+
+# Exclude .mp4 files inside the raw_videos directory
+raw_videos/*
+
+# Exclude .mp3 files inside the audios directory
+audios/*.mp3
