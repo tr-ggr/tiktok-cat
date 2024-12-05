@@ -3,7 +3,7 @@ from os import walk
 import os
     
 files = []
-directory = "pinterest"
+# directory = "pinterest"
 sfx_audio = AudioFileClip("./audios/myloveisallmine_spedup.mp3")
 
 ctr = 0
@@ -22,7 +22,7 @@ def getResultName():
     result_name = f"part{ctr+1}.mp4"
 
 def getFileNames():
-    for (dir_path, dir_names, file_names) in walk(f"./raw_videos/{directory}"):
+    for (dir_path, dir_names, file_names) in walk(f"./raw_videos/"):
         files.extend(file_names[:int(sfx_audio.duration//3) + 1])
         # files.extend(file_names[:13])
 
