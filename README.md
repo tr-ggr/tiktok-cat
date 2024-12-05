@@ -3,6 +3,9 @@
 
 This is a semi-automatic bot designed to create TikTok videos featuring cute cat compilations. The script selects short video clips, applies effects, concatenates them, and overlays a background audio track. The output is a ready-to-upload TikTok video.  
 
+### tiktok link:
+https://www.tiktok.com/@katz4life65
+
 ---
 
 ## Features  
@@ -35,7 +38,7 @@ project/
 ├── raw_videos/
 │   ├── (all raw video files here)
 ├── audios/
-│   ├── myloveisallmine_spedup.mp3
+│   ├── {audio}.mp3
 ├── script.py
 ```
 
@@ -45,7 +48,7 @@ project/
 
 1. **Setup**:  
    Place your raw cat video clips in the `raw_videos` folder.  
-   Place the audio file (`myloveisallmine_spedup.mp3`) in the `audios` folder.  
+   Place the audio file (`{audio}.mp3`) in the `audios` folder.  
 
 2. **Run the Script**:  
    Execute the script with:  
@@ -86,7 +89,7 @@ project/
 ## Notes  
 
 1. **Audio File**:  
-   Ensure `myloveisallmine_spedup.mp3` exists in the `audios` folder. You can replace it with any other audio file as long as the filename is updated in the script.  
+   Ensure `{audio}.mp3` exists in the `audios` folder. You can replace it with any other audio file as long as the filename is updated in the script.  
 
 2. **Raw Video Files**:  
    Place only the raw video files you want to process in the `raw_videos` directory.  
@@ -94,7 +97,7 @@ project/
 3. **Error Handling**:  
    If the script encounters an error or doesn't generate the output, check the following:  
    - Ensure the `raw_videos` directory contains valid video files.  
-   - Verify that `myloveisallmine_spedup.mp3` exists and is accessible.  
+   - Verify that `{audio}.mp3` exists and is accessible.  
    - Check for any permission issues when accessing files.  
 
 ---
@@ -103,7 +106,7 @@ project/
 
 - Input:  
   - Raw video files in `raw_videos/`.  
-  - Background audio (`myloveisallmine_spedup.mp3`).  
+  - Background audio. 
 
 - Output:  
   - Compiled video file (e.g., `part1.mp4`) ready for TikTok.  
